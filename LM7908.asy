@@ -1,0 +1,16 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 80 -64 -80 32
+WINDOW 3 0 -64 Top 2
+SYMATTR Value LM7908
+SYMATTR Prefix X
+SYMATTR ModelFile C:\Users\Acer\repos\ERG-2025\symmetric-source\SPICE-models\LM7908.CIR
+PIN -64 32 BOTTOM 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 0 32 BOTTOM 8
+PINATTR PinName GND
+PINATTR SpiceOrder 2
+PIN 64 32 BOTTOM 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 3
