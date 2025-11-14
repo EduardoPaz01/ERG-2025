@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>2b633ccd-b85e-4dad-98f9-32adb05bc80b</id>
+      <revision>3</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>3</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="65" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.out</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="27" width="73" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">N.ADC</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="184" height="56" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">LSB</e>
+          <e type="operand">5</e>
+          <e type="operand">2</e>
+          <e type="operand">N.ADC</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0049</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="108" width="132" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">q</e>
+          <e type="operand">LSB</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0024</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="144" width="218" height="44" color="#000000" fontSize="10">
+      <math exponentialThreshold="4">
+        <input>
+          <e type="operand">e.qrms</e>
+          <e type="operand">q</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7.0546</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="180" width="249" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A.min</e>
+          <e type="operand">20</e>
+          <e type="operand">V.out</e>
+          <e type="operand">e.qrms</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">log</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">77.0099</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
