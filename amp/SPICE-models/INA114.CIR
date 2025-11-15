@@ -1,0 +1,18 @@
+* INA114
+*
+* SPICE MODEL (adapted by EduardoPaz01)
+* SUBCIRCUIT
+*
+* Connections: RG- RG+ OUT GND Vin- V+ V- Vin+
+.SUBCKT INA114 RG- RG+ OUT GND Vin- V+ V- Vin+
+R9 N004 RG- 25k tol=1 pwr=0.1
+R10 N001 RG+ 25k tol=1 pwr=0.1
+R11 N002 N001 25k tol=1 pwr=0.1
+R12 N003 N004 25k tol=1 pwr=0.1
+R13 OUT N002 25k tol=1 pwr=0.1
+R14 0 N003 25k tol=1 pwr=0.1
+X§U1 Vin- RG+ V+ V- N001 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+X§U2 N003 N002 V+ V- OUT level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+X§U3 Vin+ RG- V+ V- N004 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+.lib UniversalOpAmp1.lib
+.ENDS
