@@ -2,10 +2,10 @@ Version 4
 SymbolType BLOCK
 RECTANGLE Normal -64 -56 64 56
 WINDOW 0 0 -56 Bottom 2
+WINDOW 3 0 56 Top 2
 SYMATTR Prefix X
 SYMATTR Value LowPass
 SYMATTR ModelFile C:\Users\Acer\repos\ERG-2025\filter\SPICE-models\LowPass.CIR
-WINDOW 3 0 56 Top 2
 PIN -64 -16 LEFT 8
 PINATTR PinName IN
 PINATTR SpiceOrder 1

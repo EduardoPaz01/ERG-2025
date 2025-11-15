@@ -16,7 +16,6 @@ R5 N005 N003 1k
 R6 OUT N003 2.2k
 C3 N003 0 100µF
 C2 OUT N005 1µ V=50 Irms=36m Rser=3.5 Lser=0 mfg="Nichicon" pn="UPL1H010MAH" type="Al electrolytic"
+C4 N001 0 4.7µ V=25 Irms=15m Rser=2.2 Lser=200f mfg="Würth Elektronik" pn="865090468011 WCAP-ASLU 3.5x3.3" type="Al electrolytic"
 .lib UniversalOpAmp1.lib
 .ENDS
-
-
