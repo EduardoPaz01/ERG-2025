@@ -1,0 +1,15 @@
+* WheatStone0g
+*
+* SPICE MODEL (by EduardoPaz01)
+* SUBCIRCUIT
+*
+* Connections:
+.SUBCKT WheatStone0g IN+ IN- V0- V0+
+R1 IN+ V0- 350.262
+R2 IN+ V0+ 350.210
+R3 V0- IN- 350.341
+R4 V0+ IN- 350.223
+R6 V0- N001 220k tol=5 pwr=0.250
+R7 IN+ N001 295.9k
+R8 N001 IN- 204.1k
+.ENDS
