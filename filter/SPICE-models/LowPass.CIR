@@ -1,0 +1,22 @@
+* LowPass
+*
+* SPICE MODEL (by EduardoPaz01)
+* SUBCIRCUIT
+*
+* Connections:
+.SUBCKT LowPass IN GND V+ V- OUT
+R1 N001 IN 10k
+X§U1 0 N004 V+ V- N002 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+X§U2 0 N005 V+ V- OUT level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg ;§pnba In+)In-)V+)V-)OUT
+R2 N004 N001 10k
+R3 N002 N001 10k
+C1 N002 N004 1µ V=50 Irms=36m Rser=3.5 Lser=0 mfg="Nichicon" pn="UPL1H010MAH" type="Al electrolytic"
+R4 N003 N002 2.2k
+R5 N005 N003 1k
+R6 OUT N003 2.2k
+C3 N003 0 100µF
+C2 OUT N005 1µ V=50 Irms=36m Rser=3.5 Lser=0 mfg="Nichicon" pn="UPL1H010MAH" type="Al electrolytic"
+.lib UniversalOpAmp1.lib
+.ENDS
+
+
