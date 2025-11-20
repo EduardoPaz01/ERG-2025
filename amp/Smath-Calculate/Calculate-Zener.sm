@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>95cd57f6-6901-4173-9c01-f0a343b40a76</id>
+      <revision>2</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>3</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="82" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.zener</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="36" width="87" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.brdw</e>
+          <e type="operand">5.1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="63" width="140" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I</e>
+          <e type="operand">P.zener</e>
+          <e type="operand">V.brdw</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.098</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="108" width="177" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.aprox</e>
+          <e type="operand">I</e>
+          <e type="operand">0.7</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0686</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="135" width="87" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.pico</e>
+          <e type="operand">6.6</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="162" width="177" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.rz</e>
+          <e type="operand">V.pico</e>
+          <e type="operand">V.brdw</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.5</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="189" width="156" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">V.rz</e>
+          <e type="operand">I.aprox</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">21.8571</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="234" width="59" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">100</e>
+          <e type="operator" args="2">≈</e>
+        </input>
+      </math>
+    </region>
+  </regions>
+</worksheet>
